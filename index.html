@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Качественные окна - Гарантия 10 лет</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="/">
+                <img src="images/logo.svg" alt="Надежные Окна" class="logo-img">
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="https://wa.me/78001234567?text=Здравствуйте!%20Хочу%20узнать%20о%20ваших%20окнах"
+               class="whatsapp-button"
+               target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-bg">
+        <img src="images/bad_window_1.png" alt="Плохое окно" class="hero-bg-img">
+    </div>
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">ХОЧЕШЬ ТАКИЕ ОКНА?</h1>
+            <h2 class="hero-subtitle">ХВАТИТ ПЛАТИТЬ ДВАЖДЫ —</h2>
+            <p class="hero-text">Поставьте окна, которые служат десятилетиями</p>
+            <button class="cta-button" onclick="scrollToForm()">
+                Получить бесплатную консультацию
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Quality Section -->
+<section id="quality" class="quality">
+    <div class="container">
+        <h2 class="section-title">Убедитесь в нашем качестве и экспертизе</h2>
+        <div class="quality-grid">
+            <div class="quality-card">
+                <div class="quality-icon">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <h3 class="quality-card-title">Собственное производство</h3>
+                <p class="quality-card-text">Контроль на каждом этапе — от стеклопакета до фурнитуры.</p>
+            </div>
+            <div class="quality-card">
+                <div class="quality-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3 class="quality-card-title">100% европейские комплектующие</h3>
+                <p class="quality-card-text">Надёжность и долговечность — без китайских подделок.</p>
+            </div>
+            <div class="quality-card">
+                <div class="quality-icon">
+                    <i class="fas fa-hard-hat"></i>
+                </div>
+                <h3 class="quality-card-title">Бригады монтажников с опытом 10+ лет</h3>
+                <p class="quality-card-text">Аккуратно, в срок, с гарантией.</p>
+            </div>
+            <div class="quality-card">
+                <div class="quality-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="quality-card-title">Гарантия до 10 лет. Срок службы — 20 лет</h3>
+                <p class="quality-card-text">Мы уверены в своём продукте — поэтому гарантируем.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WhatsApp CTA Section -->
+<section class="whatsapp-cta">
+    <div class="container">
+        <div class="whatsapp-cta-content">
+            <h2 class="whatsapp-cta-title">Остались вопросы?</h2>
+            <p class="whatsapp-cta-text">Напишите нам в WhatsApp и мы поможем с выбором правильных окон!</p>
+            <a href="https://wa.me/78001234567?text=Здравствуйте!%20Хочу%20узнать%20о%20ваших%20окнах"
+               class="whatsapp-cta-button"
+               target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                Рассчитать со скидкой 35%
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Measurement Section -->
+<section id="measurement" class="measurement">
+    <div class="container">
+        <div class="measurement-content">
+            <div class="measurement-image">
+                <img src="images/zamer.png" alt="Специалист по замеру окон" class="specialist-img">
+            </div>
+            <div class="measurement-form-section">
+                <h2 class="measurement-title">Правильное окно начинается с правильного замера</h2>
+                <p class="measurement-subtitle">Вызовите на бесплатную консультацию специалиста с опытом 20+ лет</p>
+
+                <form class="measurement-form" id="measurementForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Ваше имя" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99" required class="form-input phone-mask">
+                    </div>
+                    <button type="submit" class="form-button">
+                        <span class="button-text">Вызвать замерщика</span>
+                        <span class="button-loader"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.svg" alt="Логотип компании" class="logo-img">
+            </div>
+            <div class="footer-info">
+                <p>© 2024 Все права защищены</p>
+                <p>Гарантия качества и надежности</p>
+            </div>
+            <div class="footer-contact">
+                <a href="tel:+7-800-123-45-67" class="footer-phone">+7 (800) 123-45-67</a>
+                <p>Звонок бесплатный</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Фиксированная кнопка WhatsApp -->
+<a href="https://wa.me/78001234567?text=Здравствуйте!%20Хочу%20узнать%20о%20ваших%20окнах"
+   class="floating-whatsapp"
+   target="_blank"
+   aria-label="Написать в WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Уведомление об успешной отправке -->
+<div class="success-notification" id="successNotification">
+    <div class="success-notification-content">
+        <div class="success-icon">
+            <svg viewBox="0 0 52 52" class="checkmark">
+                <circle cx="26" cy="26" r="25" fill="none" class="checkmark-circle"/>
+                <path d="M14.1 27.2l7.1 7.2 16.7-16.8" class="checkmark-check"/>
+            </svg>
+        </div>
+        <h3 class="success-title">Заявка отправлена!</h3>
+        <p class="success-message" id="successMessage">Спасибо! Наш специалист свяжется с вами в ближайшее время.</p>
+    </div>
+</div>
+
+<script>
+    // Функция прокрутки к форме
+    function scrollToForm() {
+        document.getElementById('measurementForm').scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+        });
+
+        // Фокус на первое поле формы через небольшую задержку
+        setTimeout(() => {
+            document.getElementById('name').focus();
+        }, 800);
+    }
+
+    // Маска для телефона
+    function phoneMask(input) {
+        let value = input.value.replace(/\D/g, '');
+
+        if (value.length === 0) {
+            input.value = '';
+            return;
+        }
+
+        if (value[0] === '8') {
+            value = '7' + value.slice(1);
+        }
+
+        if (value[0] !== '7') {
+            value = '7' + value;
+        }
+
+        let formattedValue = '+7';
+
+        if (value.length > 1) {
+            formattedValue += ' (' + value.slice(1, 4);
+        }
+        if (value.length >= 4) {
+            formattedValue += ') ' + value.slice(4, 7);
+        }
+        if (value.length >= 7) {
+            formattedValue += '-' + value.slice(7, 9);
+        }
+        if (value.length >= 9) {
+            formattedValue += '-' + value.slice(9, 11);
+        }
+
+        input.value = formattedValue;
+    }
+
+    // Показать уведомление об успешной отправке
+    function showSuccessNotification(name, phone) {
+        const notification = document.getElementById('successNotification');
+        const message = document.getElementById('successMessage');
+
+        // Персонализированное сообщение
+        message.textContent = `${name}, спасибо за заявку! Наш специалист свяжется с вами в ближайшее время по номеру ${phone}.`;
+
+        // Показываем уведомление
+        notification.classList.add('show');
+
+        // Скрываем через 5 секунд
+        setTimeout(() => {
+            notification.classList.remove('show');
+        }, 5000);
+    }
+
+    // Применяем маску ко всем полям с классом phone-mask
+    document.addEventListener('DOMContentLoaded', function() {
+        const phoneInputs = document.querySelectorAll('.phone-mask');
+
+        phoneInputs.forEach(input => {
+            input.addEventListener('input', function() {
+                phoneMask(this);
+            });
+
+            input.addEventListener('keydown', function(e) {
+                // Разрешаем: backspace, delete, tab, escape, enter
+                if ([46, 8, 9, 27, 13].indexOf(e.keyCode) !== -1 ||
+                    // Разрешаем: Ctrl+A, Ctrl+C, Ctrl+V, Ctrl+X
+                    (e.keyCode === 65 && e.ctrlKey === true) ||
+                    (e.keyCode === 67 && e.ctrlKey === true) ||
+                    (e.keyCode === 86 && e.ctrlKey === true) ||
+                    (e.keyCode === 88 && e.ctrlKey === true) ||
+                    // Разрешаем: home, end, left, right
+                    (e.keyCode >= 35 && e.keyCode <= 39)) {
+                    return;
+                }
+                // Запрещаем все, кроме цифр
+                if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                    e.preventDefault();
+                }
+            });
+
+            input.addEventListener('paste', function(e) {
+                setTimeout(() => {
+                    phoneMask(this);
+                }, 0);
+            });
+        });
+    });
+
+    // Обработка отправки формы
+    document.getElementById('measurementForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const phone = document.getElementById('phone').value;
+        const name = document.getElementById('name').value;
+        const button = this.querySelector('.form-button');
+
+        // Проверяем, что телефон заполнен полностью
+        if (phone.length < 18) {
+            alert('Пожалуйста, введите полный номер телефона');
+            document.getElementById('phone').focus();
+            return;
+        }
+
+        // Показываем состояние загрузки
+        button.classList.add('loading');
+
+        // Имитируем отправку данных на сервер
+        setTimeout(() => {
+            // Скрываем состояние загрузки
+            button.classList.remove('loading');
+
+            // Показываем уведомление об успехе
+            showSuccessNotification(name, phone);
+
+            // Очищаем форму
+            this.reset();
+        }, 1500);
+    });
+</script>
+</body>
+</html>
