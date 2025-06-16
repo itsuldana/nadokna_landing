@@ -3,123 +3,470 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Качественные окна - Гарантия 10 лет</title>
+    <title>Надежные Окна | Не дайте плохим окнам испортить ваш дом</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 <!-- Header -->
 <header class="header">
     <div class="container">
-        <div class="logo">
-            <a href="/">
-                <img src="images/logo.svg" alt="Надежные Окна" class="logo-img">
-            </a>
+        <div class="header-content">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="Надежные Окна" width="120" height="32">
+            </div>
+            <nav class="header-nav">
+                <a href="#advantages" class="nav-link">Преимущества</a>
+                <a href="#consultation" class="nav-link">Замер</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+            </nav>
+            <div class="header-contact">
+                <div class="phone-wrapper">
+                    <div class="phone">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+7 (705) 700-13-06</span>
+                    </div>
+                    <div class="phone-note">Звонок бесплатный</div>
+                </div>
+                <button class="btn btn-header">
+                    <i class="fas fa-ruler-combined"></i>
+                    <span>Бесплатный замер</span>
+                </button>
+            </div>
         </div>
-        <nav class="nav">
-            <a href="https://wa.me/78001234567?text=Здравствуйте!%20Хочу%20узнать%20о%20ваших%20окнах"
-               class="whatsapp-button"
-               target="_blank">
-                <i class="fab fa-whatsapp"></i>
-                <span>WhatsApp</span>
-            </a>
-        </nav>
     </div>
 </header>
 
-<!-- Hero Section -->
+<!-- Hero Section - Problem Focus -->
 <section class="hero">
-    <div class="hero-bg">
-        <img src="images/bad_window_1.png" alt="Плохое окно" class="hero-bg-img">
+    <div class="hero-background">
+        <div class="hero-overlay"></div>
     </div>
     <div class="container">
-        <div class="hero-content">
-            <h1 class="hero-title">ХОЧЕШЬ ТАКИЕ ОКНА?</h1>
-            <h2 class="hero-subtitle">ХВАТИТ ПЛАТИТЬ ДВАЖДЫ —</h2>
-            <p class="hero-text">Поставьте окна, которые служат десятилетиями</p>
-            <button class="cta-button" onclick="scrollToForm()">
-                Получить бесплатную консультацию
-            </button>
-        </div>
-    </div>
-</section>
-
-<!-- Quality Section -->
-<section id="quality" class="quality">
-    <div class="container">
-        <h2 class="section-title">Убедитесь в нашем качестве и экспертизе</h2>
-        <div class="quality-grid">
-            <div class="quality-card">
-                <div class="quality-icon">
-                    <i class="fas fa-industry"></i>
+        <!-- Problem Hook -->
+        <div class="hero-hook" data-aos="fade-up">
+            <div class="hook-question">
+                <h1 class="hook-title">Хотите <span class="text-danger">ТАКИЕ</span> окна?</h1>
+                <div class="hook-arrow">
+                    <i class="fas fa-arrow-down"></i>
                 </div>
-                <h3 class="quality-card-title">Собственное производство</h3>
-                <p class="quality-card-text">Контроль на каждом этапе — от стеклопакета до фурнитуры.</p>
-            </div>
-            <div class="quality-card">
-                <div class="quality-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <h3 class="quality-card-title">100% европейские комплектующие</h3>
-                <p class="quality-card-text">Надёжность и долговечность — без китайских подделок.</p>
-            </div>
-            <div class="quality-card">
-                <div class="quality-icon">
-                    <i class="fas fa-hard-hat"></i>
-                </div>
-                <h3 class="quality-card-title">Бригады монтажников с опытом 10+ лет</h3>
-                <p class="quality-card-text">Аккуратно, в срок, с гарантией.</p>
-            </div>
-            <div class="quality-card">
-                <div class="quality-icon">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <h3 class="quality-card-title">Гарантия до 10 лет. Срок службы — 20 лет</h3>
-                <p class="quality-card-text">Мы уверены в своём продукте — поэтому гарантируем.</p>
             </div>
         </div>
-    </div>
-</section>
 
-<!-- WhatsApp CTA Section -->
-<section class="whatsapp-cta">
-    <div class="container">
-        <div class="whatsapp-cta-content">
-            <h2 class="whatsapp-cta-title">Остались вопросы?</h2>
-            <p class="whatsapp-cta-text">Напишите нам в WhatsApp и мы поможем с выбором правильных окон!</p>
-            <a href="https://wa.me/78001234567?text=Здравствуйте!%20Хочу%20узнать%20о%20ваших%20окнах"
-               class="whatsapp-cta-button"
-               target="_blank">
-                <i class="fab fa-whatsapp"></i>
-                Рассчитать со скидкой 35%
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- Measurement Section -->
-<section id="measurement" class="measurement">
-    <div class="container">
-        <div class="measurement-content">
-            <div class="measurement-image">
-                <img src="images/zamer.png" alt="Специалист по замеру окон" class="specialist-img">
-            </div>
-            <div class="measurement-form-section">
-                <h2 class="measurement-title">Правильное окно начинается с правильного замера</h2>
-                <p class="measurement-subtitle">Вызовите на бесплатную консультацию специалиста с опытом 20+ лет</p>
-
-                <form class="measurement-form" id="measurementForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Ваше имя" required class="form-input">
+        <!-- Problem Showcase -->
+        <div class="problem-showcase-main" data-aos="fade-up" data-aos-delay="200">
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-image-wrapper">
+                        <img src="./images/bad_window_1.png" alt="Конденсат и плесень на окнах" class="problem-image">
+                        <div class="problem-badge danger">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>ОПАСНО!</span>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99" required class="form-input phone-mask">
+                    <div class="problem-content">
+                        <h3 class="problem-title">Конденсат и плесень</h3>
+                        <p class="problem-description">Разрушают стены и вредят здоровью вашей семьи</p>
+                        <div class="problem-cost">
+                            <i class="fas fa-ruble-sign"></i>
+                            <span>Ремонт: от 50 000 ₽</span>
+                        </div>
                     </div>
-                    <button type="submit" class="form-button">
-                        <span class="button-text">Вызвать замерщика</span>
-                        <span class="button-loader"></span>
-                    </button>
-                </form>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-image-wrapper">
+                        <img src="./images/bad_window_2.png" alt="Сквозняки через окна" class="problem-image">
+                        <div class="problem-badge warning">
+                            <i class="fas fa-wind"></i>
+                            <span>ДОРОГО!</span>
+                        </div>
+                    </div>
+                    <div class="problem-content">
+                        <h3 class="problem-title">Сквозняки и потери тепла</h3>
+                        <p class="problem-description">Огромные счета за отопление каждый месяц</p>
+                        <div class="problem-cost">
+                            <i class="fas fa-ruble-sign"></i>
+                            <span>Переплата: +40% к счетам</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-image-wrapper">
+                        <img src="./images/bad_window_3.png" alt="Сломанная фурнитура окон" class="problem-image">
+                        <div class="problem-badge danger">
+                            <i class="fas fa-tools"></i>
+                            <span>ПОЛОМКИ!</span>
+                        </div>
+                    </div>
+                    <div class="problem-content">
+                        <h3 class="problem-title">Постоянные поломки</h3>
+                        <p class="problem-description">Фурнитура ломается, окна не закрываются</p>
+                        <div class="problem-cost">
+                            <i class="fas fa-ruble-sign"></i>
+                            <span>Ремонт: каждые 2-3 года</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparison Section -->
+        <div class="comparison-section" data-aos="fade-up" data-aos-delay="400">
+            <div class="comparison-header">
+                <h2 class="comparison-title">
+                    <span class="text-danger">ХВАТИТ ПЛАТИТЬ ДВАЖДЫ</span><br>
+                    Поставьте окна, которые служат десятилетиями
+                </h2>
+                <p class="comparison-subtitle">
+                    Один раз установили — и забыли про проблемы на 20 лет вперёд<br>
+                    <strong>Европейские окна с гарантией до 10 лет</strong>
+                </p>
+            </div>
+
+            <div class="comparison-table-compact">
+                <div class="comparison-header-row">
+                    <div class="comparison-label bad">
+                        <i class="fas fa-times-circle"></i>
+                        <span>Дешёвые окна</span>
+                    </div>
+                    <div class="vs-compact">VS</div>
+                    <div class="comparison-label good">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Наши окна</span>
+                    </div>
+                </div>
+
+                <div class="comparison-rows">
+                    <div class="comparison-row">
+                        <div class="comparison-cell bad">
+                            <i class="fas fa-times"></i>
+                            <span>2–3 года службы</span>
+                        </div>
+                        <div class="comparison-cell good">
+                            <i class="fas fa-check"></i>
+                            <span>20+ лет службы</span>
+                        </div>
+                    </div>
+
+                    <div class="comparison-row">
+                        <div class="comparison-cell bad">
+                            <i class="fas fa-times"></i>
+                            <span>Постоянные ремонты</span>
+                        </div>
+                        <div class="comparison-cell good">
+                            <i class="fas fa-check"></i>
+                            <span>Немецкая фурнитура Siegenia</span>
+                        </div>
+                    </div>
+
+                    <div class="comparison-row">
+                        <div class="comparison-cell bad">
+                            <i class="fas fa-times"></i>
+                            <span>Конденсат и грибок</span>
+                        </div>
+                        <div class="comparison-cell good">
+                            <i class="fas fa-check"></i>
+                            <span>Полная герметичность</span>
+                        </div>
+                    </div>
+
+                    <div class="comparison-row">
+                        <div class="comparison-cell bad">
+                            <i class="fas fa-times"></i>
+                            <span>Сквозняки и шум</span>
+                        </div>
+                        <div class="comparison-cell good">
+                            <i class="fas fa-check"></i>
+                            <span>Звукоизоляция до 42 дБ</span>
+                        </div>
+                    </div>
+
+                    <div class="comparison-row">
+                        <div class="comparison-cell bad">
+                            <i class="fas fa-times"></i>
+                            <span>Высокие счета</span>
+                        </div>
+                        <div class="comparison-cell good">
+                            <i class="fas fa-check"></i>
+                            <span>Экономия до 40%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Choose Us Section -->
+            <div class="why-choose-section">
+                <h3 class="why-choose-title">
+                    <i class="fas fa-gem"></i>
+                    Почему выбирают нас?
+                </h3>
+
+                <div class="why-choose-grid">
+                    <div class="why-choose-item">
+                        <div class="why-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h4>Собственное производство</h4>
+                        <p>100% контроль, никаких посредников</p>
+                    </div>
+
+                    <div class="why-choose-item">
+                        <div class="why-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <h4>Европейские компоненты</h4>
+                        <p>VEKA, WDS, Siegenia — оригинал</p>
+                    </div>
+
+                    <div class="why-choose-item">
+                        <div class="why-icon">
+                            <i class="fas fa-hard-hat"></i>
+                        </div>
+                        <h4>Монтажники 10+ лет опыта</h4>
+                        <p>Собственные бригады, ГОСТ</p>
+                    </div>
+
+                    <div class="why-choose-item">
+                        <div class="why-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Гарантия 5–10 лет</h4>
+                        <p>Срок службы — 20+ лет</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="solution-cta">
+                <button class="btn btn-primary btn-large pulse">
+                    <i class="fas fa-calculator"></i>
+                    <span>Получить расчёт и бесплатный замер</span>
+                </button>
+                <div class="cta-benefits">
+                    <div class="cta-benefit">
+                        <i class="fas fa-gift"></i>
+                        <span>Замер бесплатно</span>
+                    </div>
+                    <div class="cta-benefit">
+                        <i class="fas fa-clock"></i>
+                        <span>Расчет за 15 минут</span>
+                    </div>
+                    <div class="cta-benefit">
+                        <i class="fas fa-handshake"></i>
+                        <span>Без обязательств</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--&lt;!&ndash; Advantages Section &ndash;&gt;-->
+<!--<section class="advantages">-->
+<!--    <div class="container">-->
+<!--        <div class="section-header" data-aos="fade-up">-->
+<!--            <h2 class="section-title">Почему выбирают именно нас?</h2>-->
+<!--            <p class="section-subtitle">4 главных преимущества, которые гарантируют качество</p>-->
+<!--        </div>-->
+
+<!--        <div class="advantages-grid">-->
+<!--            <div class="advantage-card" data-aos="zoom-in" data-aos-delay="100">-->
+<!--                <div class="advantage-number">01</div>-->
+<!--                <div class="advantage-icon">-->
+<!--                    <i class="fas fa-industry"></i>-->
+<!--                </div>-->
+<!--                <h3 class="advantage-title">Собственное производство</h3>-->
+<!--                <p class="advantage-description">-->
+<!--                    Полный контроль качества на всех этапах. Никаких посредников — только прямое производство по европейским стандартам.-->
+<!--                </p>-->
+<!--                <div class="advantage-highlight">-->
+<!--                    <i class="fas fa-check"></i>-->
+<!--                    <span>100% контроль качества</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="advantage-card" data-aos="zoom-in" data-aos-delay="200">-->
+<!--                <div class="advantage-number">02</div>-->
+<!--                <div class="advantage-icon">-->
+<!--                    <i class="fas fa-certificate"></i>-->
+<!--                </div>-->
+<!--                <h3 class="advantage-title">Полностью европейские компоненты</h3>-->
+<!--                <p class="advantage-description">-->
+<!--                    Профили VEKA, WDS, фурнитура Siegenia. Только оригинальные комплектующие от ведущих европейских производителей.-->
+<!--                </p>-->
+<!--                <div class="advantage-highlight">-->
+<!--                    <i class="fas fa-check"></i>-->
+<!--                    <span>Сертифицированные материалы</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="advantage-card" data-aos="zoom-in" data-aos-delay="300">-->
+<!--                <div class="advantage-number">03</div>-->
+<!--                <div class="advantage-icon">-->
+<!--                    <i class="fas fa-users"></i>-->
+<!--                </div>-->
+<!--                <h3 class="advantage-title">Собственные бригады монтажников</h3>-->
+<!--                <p class="advantage-description">-->
+<!--                    Опыт каждого мастера от 10 лет. Монтаж строго по ГОСТу с использованием профессионального инструмента.-->
+<!--                </p>-->
+<!--                <div class="advantage-highlight">-->
+<!--                    <i class="fas fa-check"></i>-->
+<!--                    <span>Опыт 10+ лет</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="advantage-card" data-aos="zoom-in" data-aos-delay="400">-->
+<!--                <div class="advantage-number">04</div>-->
+<!--                <div class="advantage-icon">-->
+<!--                    <i class="fas fa-shield-alt"></i>-->
+<!--                </div>-->
+<!--                <h3 class="advantage-title">Гарантия от 5 до 10 лет</h3>-->
+<!--                <p class="advantage-description">-->
+<!--                    Срок службы наших окон 20+ лет. Полное гарантийное и постгарантийное обслуживание. Мы отвечаем за свою работу.-->
+<!--                </p>-->
+<!--                <div class="advantage-highlight">-->
+<!--                    <i class="fas fa-check"></i>-->
+<!--                    <span>Срок службы 20+ лет</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!-- Consultation Section -->
+<section class="consultation">
+    <div class="consultation-background">
+        <div class="consultation-pattern"></div>
+    </div>
+    <div class="container">
+        <div class="consultation-content">
+            <div class="consultation-text" data-aos="fade-right">
+                <h2 class="consultation-title">
+                    Профессиональный <span class="text-primary">бесплатный замер</span> — основа качественного окна
+                </h2>
+                <p class="consultation-description">
+                    Наши специалисты проведут точные замеры с учетом всех особенностей вашего проема
+                </p>
+
+                <div class="measurement-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-ruler-combined"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Точные замеры</h4>
+                            <p>Профессиональное оборудование и опыт 20+ лет</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Расчет на месте</h4>
+                            <p>Точная стоимость без скрытых платежей</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Консультация эксперта</h4>
+                            <p>Подберем оптимальное решение для вашего дома</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Абсолютно бесплатно</h4>
+                            <p>Никаких скрытых платежей и обязательств</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="company-trust">
+                    <div class="trust-item">
+                        <i class="fas fa-industry"></i>
+                        <span>Собственное производство</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-users"></i>
+                        <span>Более 5000 довольных клиентов</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Гарантия до 10 лет</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="consultation-form-section" data-aos="fade-left">
+                <div class="measurement-showcase">
+                    <img src="./images/zamer.png" alt="Профессиональный замер окон" class="measurement-image">
+                    <div class="measurement-overlay">
+                        <div class="measurement-badge">
+                            <i class="fas fa-tools"></i>
+                            <span>Профессиональный замер</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3 class="form-title">Заказать бесплатный замер</h3>
+                        <p class="form-subtitle">Наш специалист приедет в удобное время и проведет точные замеры</p>
+                    </div>
+
+                    <form class="consultation-form-fields">
+                        <div class="form-group">
+                            <div class="form-input-wrapper">
+                                <i class="fas fa-user form-icon"></i>
+                                <input type="text" placeholder="Ваше имя" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-input-wrapper">
+                                <i class="fas fa-phone-alt form-icon"></i>
+                                <input type="tel" placeholder="Ваш телефон" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-input-wrapper">
+                                <i class="fas fa-map-marker-alt form-icon"></i>
+                                <input type="text" placeholder="Адрес (район)" class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-input-wrapper">
+                                <i class="fas fa-clock form-icon"></i>
+                                <select class="form-input">
+                                    <option value="">Удобное время для визита</option>
+                                    <option value="morning">Утром (9:00 - 12:00)</option>
+                                    <option value="afternoon">Днем (12:00 - 17:00)</option>
+                                    <option value="evening">Вечером (17:00 - 20:00)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-form">
+                            <span>Заказать бесплатный замер</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+
+                        <div class="form-privacy">
+                            Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -129,174 +476,72 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
-            <div class="footer-logo">
-                <img src="images/logo.svg" alt="Логотип компании" class="logo-img">
-            </div>
             <div class="footer-info">
-                <p>© 2024 Все права защищены</p>
-                <p>Гарантия качества и надежности</p>
+                <div class="footer-logo">
+                    <img src="./images/logo.svg" alt="Надежные Окна" width="120" height="32">
+                </div>
+                <p class="footer-description">
+                    Качественные пластиковые окна в Алматы и Алматинской области.
+                    Собственное производство, европейские компоненты, гарантия до 10 лет.
+                </p>
+                <div class="footer-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+7 (705) 700-13-06</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@nadokna.kz</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>г. Алматы, ул. Производственная, 123</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Пн-Сб: 9:00-18:00, Вс: выходной</span>
+                    </div>
+                </div>
             </div>
-            <div class="footer-contact">
-                <a href="tel:+7-800-123-45-67" class="footer-phone">+7 (800) 123-45-67</a>
-                <p>Звонок бесплатный</p>
+
+            <div class="footer-services">
+                <h3 class="footer-title">Наши услуги</h3>
+                <ul class="footer-list">
+                    <li><a href="#">Пластиковые окна</a></li>
+                    <li><a href="#">Остекление балконов</a></li>
+                    <li><a href="#">Остекление лоджий</a></li>
+                    <li><a href="#">Входные двери</a></li>
+                    <li><a href="#">Межкомнатные двери</a></li>
+                    <li><a href="#">Ремонт окон</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-info-links">
+                <h3 class="footer-title">Информация</h3>
+                <ul class="footer-list">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Наши работы</a></li>
+                    <li><a href="#">Отзывы клиентов</a></li>
+                    <li><a href="#">Гарантии</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                © 2024 Надежные Окна. Все права защищены.
+            </div>
+            <div class="footer-links">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Условия использования</a>
             </div>
         </div>
     </div>
 </footer>
 
-<!-- Фиксированная кнопка WhatsApp -->
-<a href="https://wa.me/78001234567?text=Здравствуйте!%20Хочу%20узнать%20о%20ваших%20окнах"
-   class="floating-whatsapp"
-   target="_blank"
-   aria-label="Написать в WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
-<!-- Уведомление об успешной отправке -->
-<div class="success-notification" id="successNotification">
-    <div class="success-notification-content">
-        <div class="success-icon">
-            <svg viewBox="0 0 52 52" class="checkmark">
-                <circle cx="26" cy="26" r="25" fill="none" class="checkmark-circle"/>
-                <path d="M14.1 27.2l7.1 7.2 16.7-16.8" class="checkmark-check"/>
-            </svg>
-        </div>
-        <h3 class="success-title">Заявка отправлена!</h3>
-        <p class="success-message" id="successMessage">Спасибо! Наш специалист свяжется с вами в ближайшее время.</p>
-    </div>
-</div>
-
-<script>
-    // Функция прокрутки к форме
-    function scrollToForm() {
-        document.getElementById('measurementForm').scrollIntoView({
-            behavior: 'smooth',
-            block: 'center'
-        });
-
-        // Фокус на первое поле формы через небольшую задержку
-        setTimeout(() => {
-            document.getElementById('name').focus();
-        }, 800);
-    }
-
-    // Маска для телефона
-    function phoneMask(input) {
-        let value = input.value.replace(/\D/g, '');
-
-        if (value.length === 0) {
-            input.value = '';
-            return;
-        }
-
-        if (value[0] === '8') {
-            value = '7' + value.slice(1);
-        }
-
-        if (value[0] !== '7') {
-            value = '7' + value;
-        }
-
-        let formattedValue = '+7';
-
-        if (value.length > 1) {
-            formattedValue += ' (' + value.slice(1, 4);
-        }
-        if (value.length >= 4) {
-            formattedValue += ') ' + value.slice(4, 7);
-        }
-        if (value.length >= 7) {
-            formattedValue += '-' + value.slice(7, 9);
-        }
-        if (value.length >= 9) {
-            formattedValue += '-' + value.slice(9, 11);
-        }
-
-        input.value = formattedValue;
-    }
-
-    // Показать уведомление об успешной отправке
-    function showSuccessNotification(name, phone) {
-        const notification = document.getElementById('successNotification');
-        const message = document.getElementById('successMessage');
-
-        // Персонализированное сообщение
-        message.textContent = `${name}, спасибо за заявку! Наш специалист свяжется с вами в ближайшее время по номеру ${phone}.`;
-
-        // Показываем уведомление
-        notification.classList.add('show');
-
-        // Скрываем через 5 секунд
-        setTimeout(() => {
-            notification.classList.remove('show');
-        }, 5000);
-    }
-
-    // Применяем маску ко всем полям с классом phone-mask
-    document.addEventListener('DOMContentLoaded', function() {
-        const phoneInputs = document.querySelectorAll('.phone-mask');
-
-        phoneInputs.forEach(input => {
-            input.addEventListener('input', function() {
-                phoneMask(this);
-            });
-
-            input.addEventListener('keydown', function(e) {
-                // Разрешаем: backspace, delete, tab, escape, enter
-                if ([46, 8, 9, 27, 13].indexOf(e.keyCode) !== -1 ||
-                    // Разрешаем: Ctrl+A, Ctrl+C, Ctrl+V, Ctrl+X
-                    (e.keyCode === 65 && e.ctrlKey === true) ||
-                    (e.keyCode === 67 && e.ctrlKey === true) ||
-                    (e.keyCode === 86 && e.ctrlKey === true) ||
-                    (e.keyCode === 88 && e.ctrlKey === true) ||
-                    // Разрешаем: home, end, left, right
-                    (e.keyCode >= 35 && e.keyCode <= 39)) {
-                    return;
-                }
-                // Запрещаем все, кроме цифр
-                if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
-                    e.preventDefault();
-                }
-            });
-
-            input.addEventListener('paste', function(e) {
-                setTimeout(() => {
-                    phoneMask(this);
-                }, 0);
-            });
-        });
-    });
-
-    // Обработка отправки формы
-    document.getElementById('measurementForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        const phone = document.getElementById('phone').value;
-        const name = document.getElementById('name').value;
-        const button = this.querySelector('.form-button');
-
-        // Проверяем, что телефон заполнен полностью
-        if (phone.length < 18) {
-            alert('Пожалуйста, введите полный номер телефона');
-            document.getElementById('phone').focus();
-            return;
-        }
-
-        // Показываем состояние загрузки
-        button.classList.add('loading');
-
-        // Имитируем отправку данных на сервер
-        setTimeout(() => {
-            // Скрываем состояние загрузки
-            button.classList.remove('loading');
-
-            // Показываем уведомление об успехе
-            showSuccessNotification(name, phone);
-
-            // Очищаем форму
-            this.reset();
-        }, 1500);
-    });
-</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
